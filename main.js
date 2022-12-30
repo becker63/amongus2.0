@@ -1,5 +1,4 @@
- (function() {
-      // Set up Pixi.js
+
       var renderer = PIXI.autoDetectRenderer(660, 660, {backgroundColor: 0x34495e, antialias: true});
       document.body.appendChild(renderer.view);
 
@@ -81,10 +80,4 @@
       }
   })();
 
-  // Added this to codepen only so that the blog readers can try it in the iframe.
-  var playButton = document.getElementById("play-button");
-  playButton.addEventListener('click', function() {
-    var preview = document.getElementById("preview");
 
-    preview.setAttribute("class", "hide");
-  });
